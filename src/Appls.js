@@ -22,7 +22,7 @@ const data = [
                 [ // DanMurphy's ECF Dans
 
                             ["Element", "Density", { role: "style" }],
-                            ["Critical", 21, "red"], // RGB value
+                            ["Critical", 111, "red"], // RGB value
                             ["High", 74, "orange"], // English color name
                             ["Medium", 155, "yellow"] 
                 ],
