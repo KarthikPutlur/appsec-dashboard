@@ -6,17 +6,42 @@ import {Chart} from "react-google-charts";
 class App2  extends Component {
   render() {
     return (
-      <div className="App2 ">
+      <div className="App2">
        
        {
           <Chart
             chartType="ColumnChart"
             width="100%"
             height="400px"
-            backgroundColor= "#111111"
-            opacity="0.9"
             
-            data={this.props.data}
+            options={
+              // Chart options
+               {
+                annotations: {
+                  textStyle: {
+                  fontName: 'Times-Roman',
+                  fontSize: 28,
+                  
+                }
+                },
+                tooltip:{
+                  textstyle:{
+                    
+                    italic:true
+                  }
+                },
+                hAxis: {
+                  textStyle : {
+                    fontSize: 27 
+                }
+                },
+                vAxis: {textStyle : {
+                  fontSize: 27 } },
+                legend: "none"
+              }
+            }
+            
+           data={this.props.data}
           />
        }
       </div>
